@@ -31,6 +31,7 @@ namespace ListupEditFileFromWorkItem
 
             foreach (WorkItem wi in wic)
             {
+                Console.WriteLine("作業項目名={0}", wi.Title);
                 for (var i = 0; i < wi.Links.Count; ++i)
                 {
                     if (!wi.Links[i].ArtifactLinkType.Name.Equals("Fixed in Changeset")) continue;
